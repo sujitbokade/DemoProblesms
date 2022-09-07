@@ -35,6 +35,7 @@ public class DemoProblems {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Radius of Circle(in cm)");
         double radius = sc.nextDouble();
+
         double area = 3.14 * radius * radius;
         double perimeter = 2 * 3.14 * radius;
 
@@ -44,24 +45,19 @@ public class DemoProblems {
 
     public static void triangle() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("***Area of Triangle***");
-        System.out.println("Enter Base of Triangle(in cm)");
-        double base = sc.nextDouble();
-        System.out.println("Enter Perpendicular Height of Triangle(in cm)");
-        double height = sc.nextDouble();
-        double area = (base * height) / 2;
-
-        System.out.println("Area of Triangle: " + area + " Sq.cm");
-
-        System.out.println("***Perimeter of Triangle***");
         System.out.println("Enter First Side(in cm)");
-        double firstSide = sc.nextDouble();
+        double a = sc.nextDouble();
         System.out.println("Enter Second Side(in cm)");
-        double secondSide = sc.nextDouble();
+        double b = sc.nextDouble();
         System.out.println("Enter Third Side(in cm)");
-        double thirdSide = sc.nextDouble();
-        double perimeter = (firstSide + secondSide + thirdSide);
+        double c = sc.nextDouble();
 
+        double perimeter = (a + b + c);
+        double s = perimeter / 2;
+        double area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+
+
+        System.out.println("Area of Triangle: " + area + " sq.cm");
         System.out.println("Perimeter of Triangle: " + perimeter + " cm");
     }
 
@@ -71,6 +67,7 @@ public class DemoProblems {
         double length = sc.nextDouble();
         System.out.println("Enter Width of Rectangle(in cm)");
         double width = sc.nextDouble();
+
         double area = length * width;
         double perimeter = 2 * (length + width);
 
