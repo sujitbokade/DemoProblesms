@@ -28,6 +28,7 @@ public class DemoProblems {
                 break;
 
         }
+        sc.close();
     }
 
     public static void circle() {
@@ -54,24 +55,24 @@ public class DemoProblems {
 
         System.out.println("***Perimeter of Triangle***");
         System.out.println("Enter First Side(in cm)");
-        double fSide = sc.nextDouble();
+        double firstSide = sc.nextDouble();
         System.out.println("Enter Second Side(in cm)");
-        double sSide = sc.nextDouble();
+        double secondSide = sc.nextDouble();
         System.out.println("Enter Third Side(in cm)");
-        double tSide = sc.nextDouble();
-        double perimeter = (fSide + sSide + tSide);
+        double thirdSide = sc.nextDouble();
+        double perimeter = (firstSide + secondSide + thirdSide);
 
         System.out.println("Perimeter of Triangle: " + perimeter + " cm");
     }
 
     public static void rectangle() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter First Side(in cm)");
-        double firstSide = sc.nextDouble();
-        System.out.println("Enter Second Side(in cm)");
-        double secondSide = sc.nextDouble();
-        double area = firstSide * secondSide;
-        double perimeter = 2 * (firstSide + secondSide);
+        System.out.println("Enter Length of Rectangle(in cm)");
+        double length = sc.nextDouble();
+        System.out.println("Enter Width of Rectangle(in cm)");
+        double width = sc.nextDouble();
+        double area = length * width;
+        double perimeter = 2 * (length + width);
 
         System.out.println("Area of Rectangle: " + area + " Sq.cm");
         System.out.println("Perimeter of Rectangle: " + perimeter + " cm");
